@@ -1,13 +1,20 @@
 # Trạng thái hiện tại — đọc trước khi tiếp tục
 
-Cập nhật: 2026-09-16T09:17:20+07:00.
+Cập nhật: 2026-09-16T09:19:27+07:00.
 
 ## Công việc hiện tại
 
 - Mã việc: RELEASE-GITHUB.
-- Trạng thái: IN_PROGRESS.
+- Trạng thái: DONE.
 - Kết quả: code và local valid-path cho đủ chín công cụ đã hoàn tất; trang chi tiết đã có preview PDF/ảnh/TXT và fallback download cho định dạng Office/ZIP. Ảnh → Văn bản nhận Ctrl/⌘+V và hiển thị/copy text OCR trực tiếp. Backend, frontend, Stirling đang healthy; URL `http://localhost:1280`.
 - Chưa thể dùng trạng thái DONE vì chưa có browser/negative/resource/restart-cleanup matrix đầy đủ, chưa nghiệm thu NAS và image scan còn finding.
+
+## GitHub
+
+- Repository: `https://github.com/mson-ssh/office-toolbox.git`.
+- Nhánh: `main`, tracking `origin/main`.
+- Push đầu tiên: PASS ngày 2026-09-16; mã nguồn, Compose và tài liệu đã lên remote.
+- `.env`, database, WAL/SHM, job files, node_modules và dist không được commit.
 
 ## Runtime đang chạy
 

@@ -719,3 +719,12 @@ Bước tiếp theo cụ thể:
 - Commit gốc tạo thành công: `1ac0b28 feat: build OfficeBox document toolbox`, 87 file/11.629 dòng. Working tree sạch ngay sau commit.
 - Secret scan và ignore verification: PASS. `git diff --cached --check`: PASS sau khi chuẩn hóa whitespace.
 - Lệnh sắp chạy sau checkpoint commit: `git push -u origin main` tới `https://github.com/mson-ssh/office-toolbox.git`. Kết quả chưa biết; không ghi PASS.
+
+
+### RELEASE-GITHUB — push PASS
+
+- Thời điểm: 2026-09-16T09:19:27+07:00. Mã việc: RELEASE-GITHUB. Trạng thái: DONE.
+- `git push -u origin main`: PASS; GitHub tạo nhánh `main` và local tracking `origin/main`. Remote: `https://github.com/mson-ssh/office-toolbox.git`.
+- Nội dung đã push qua commit `ee324a9`: toàn bộ OfficeBox và checkpoint release; không có `.env`, database, job output, node_modules hoặc dist.
+- Bước bàn giao cuối: commit STATUS/SESSION_LOG này rồi push fast-forward; sau đó xác minh remote HEAD bằng `git ls-remote` và working tree sạch.
+- Giới hạn triển khai không đổi: local runtime PASS; browser/negative/resource/NAS acceptance còn mở và Stirling official image còn finding đã ghi trong SECURITY.md.
