@@ -711,3 +711,11 @@ Bước tiếp theo cụ thể:
 - `git add .`: 87 file staged, 11.633 dòng mới. Secret scan theo pattern private key/token/API key/assigned secret: PASS; `.env`, SQLite/WAL, job files, node_modules và dist đã xác nhận ignored.
 - `git diff --cached --check`: FAIL do trailing whitespace ở CSS/SESSION_LOG và một số file có thêm blank line ở EOF; chưa commit/push.
 - Bước tiếp theo: chỉ chuẩn hóa whitespace các file được báo, stage lại và yêu cầu diff check PASS.
+
+
+### RELEASE-GITHUB — commit PASS, push RUNNING
+
+- Thời điểm: 2026-09-16T09:18:55+07:00. Mã việc: RELEASE-GITHUB. Trạng thái: RUNNING.
+- Commit gốc tạo thành công: `1ac0b28 feat: build OfficeBox document toolbox`, 87 file/11.629 dòng. Working tree sạch ngay sau commit.
+- Secret scan và ignore verification: PASS. `git diff --cached --check`: PASS sau khi chuẩn hóa whitespace.
+- Lệnh sắp chạy sau checkpoint commit: `git push -u origin main` tới `https://github.com/mson-ssh/office-toolbox.git`. Kết quả chưa biết; không ghi PASS.
